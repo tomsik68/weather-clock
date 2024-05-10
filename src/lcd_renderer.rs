@@ -3,9 +3,7 @@ use actix::prelude::*;
 use std::time::Duration;
 
 pub struct LcdRenderer {
-    // 1
     bus: u8,
-    // 0x27
     addr: u16,
     text: Text,
 }

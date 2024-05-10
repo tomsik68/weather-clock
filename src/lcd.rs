@@ -9,7 +9,7 @@ pub struct Lcd {
 impl Lcd {
     pub fn new_i2c(bus: u8, addr: u16) -> anyhow::Result<Self> {
         let mut dev = Pcf8574::new(bus, addr)?;
-        dev.on_error(ErrorHandling::Panic);
+        dev.on_error(ErrorHandling::None);
 
         let mut display = Display::new(dev);
         display.init(lcd::FunctionLine::Line2, lcd::FunctionDots::Dots5x8);
