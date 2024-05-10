@@ -1,0 +1,2 @@
+FROM ghcr.io/cross-rs/armv7-unknown-linux-musleabihf:latest
+RUN apt-get update && apt-get -y install binutils-arm-linux-gnueabihf && rm -rf /var/lib/apt/lists/*

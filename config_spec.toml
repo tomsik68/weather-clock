@@ -1,0 +1,35 @@
+[[param]]
+name = "latitude"
+type = "String"
+default = "String::from(\"0\")"
+doc = "Geographical latitude of the place to show weather data for"
+
+[[param]]
+name = "longitude"
+type = "String"
+default = "String::from(\"0\")"
+doc = "Geographical longitude of the place to show weather data for"
+
+[[param]]
+name = "appid"
+type = "String"
+optional = false
+doc = "OpenWeatherMap API key. See https://home.openweathermap.org/api_keys for more information."
+
+[[param]]
+name = "units"
+type = "String"
+default = "String::from(\"metric\")"
+doc = "The units to use while fetching weather data. Can be standard, metric or imperial."
+
+[[param]]
+name = "bus"
+type = "u8"
+default = "1"
+doc = "I2C bus where the LCD is connected"
+
+[[param]]
+name = "addr"
+type = "u16"
+default = "0x27"
+doc = "I2C address where the LCD is connected"

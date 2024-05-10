@@ -1,0 +1,10 @@
+# Geographical coordinates of the place to show weather for
+latitude = "48"
+longitude = "16"
+# Units: metric, imperial or standard. Refer to OpenWeatherMap documentation for more information.
+units = metric
+# OpenWeatherMap API key
+appid = example
+# I2C connection of the LCD display
+bus = 1
+addr = 0x27

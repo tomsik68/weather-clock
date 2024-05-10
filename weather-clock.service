@@ -1,0 +1,9 @@
+[Unit]
+Description = Weather Clock
+
+[Service]
+ExecStart = /usr/local/bin/weather-clock
+Restart = never
+
+[Install]
+WantedBy = default.target
